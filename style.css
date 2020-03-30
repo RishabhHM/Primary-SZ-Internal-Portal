@@ -1,5 +1,6 @@
 body {
     padding: 0 7.5%;
+    overflow: hidden;
 }
 
 .main-content {
@@ -19,7 +20,7 @@ body {
 
 .main-content .btn {
     margin-right: 5%;
-    border-radius: 20px;
+    border-radius: 5px;
     padding: 10px 15px;
     text-align: center;
     text-decoration: none;
@@ -28,18 +29,33 @@ body {
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.2s;
     cursor: pointer;
+    font-weight: 700 !important;
+    letter-spacing: 1px;
+    min-width: 100px;
 }
 
 .btn-primary {
-    background-color: #000;
-    border: 4px solid #000;
-    color: white;
+    background-color: white;
+    border: 2px solid #000;
+    color: #000;
 }
 
 .btn-primary:hover {
-    background-color: #f47621;
+    background-color: #000;
     color: white;
-    border: 4px solid  #f47621;
+    border: 2px solid  #000;
+}
+
+.btn-primary2 {
+    background-color: #f47621;
+    border: 2px solid #f47621;
+    color: white;
+}
+
+.btn-primary2:hover {
+    background-color: #000;
+    color: white;
+    border: 2px solid  #000;
 }
 
 .cnt-box {
@@ -62,21 +78,36 @@ body {
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.2s;
     cursor: pointer;
-    height: 2px;
-    width: 2px;
+    /* height: 2px;
+    width: 2px; */
+    width: 10px;
+    height: 25px;
     border-radius: 100%;
 }
 
 .btn-close {
     background-color: #ff605c;
+    border-radius: 50%;
+}
+
+.btn-close:hover{
+    background-color: #612221;
 }
 
 .btn-min {
     background-color: #ffbd44;
 }
 
+.btn-min:hover {
+    background-color: #503b15;
+}
+
 .btn-expd {
     background-color: #00ca4e;
+}
+
+.btn-expd:hover {
+    background-color: #003b17;
 }
 
 /*Media Query starts here*/
