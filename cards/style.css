@@ -1,0 +1,109 @@
+.event {
+    background-color: rgb(245, 193, 82);
+    padding: 30px;
+    padding-top: 75px;
+    padding-bottom: 50px;
+}
+
+.event .card {
+    transition: 0.3s;
+    border-radius: 15px;
+    margin-right: 1px;
+    margin-left: 1px;
+    height: 0%;
+}
+
+.event .card-img-top {
+    opacity: 0.8;
+}
+
+.event .card-title {
+    opacity: 0;
+}
+
+.event .card:hover .card-img-top {
+    opacity: 1;
+}
+
+.event .card:hover .card-title {
+    opacity: 1;
+}
+
+.event .card-body{
+    text-align: center;
+}
+
+.event .card:hover {
+    box-shadow: 0px 8px 25px 25px rgba(0,0,0,0.2);
+    z-index: 999;
+}
+
+.event .card:hover .card-img-overlay {
+    color: white;
+}
+
+@media (max-width:1450px) {
+    .event {
+        padding: 20px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+    .event .card {
+        transition: 0.3s;
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+
+    .event .card .face {
+        height: 100px;
+    }
+
+    .event .card-img-top {
+        border-radius: 15px 15px 0 0;
+        height: 25vh;
+    }
+
+    .event img {
+        border-radius: 15px 15px 0 0;
+    }    
+
+    .event .card .face1 {
+        transition: 0.5s;
+        transform: translateY(100px);
+    }
+    
+    .event .card:hover .face1 {
+        transform: translateY(0px);
+    }
+
+    .event .card .face2 {
+        transition: 0.5s;
+        transform: translateY(-100px);
+    }
+    
+    .event .card:hover .face2 {
+        transform: translateY(100px);
+    }
+  }
+
+  
+  @media (max-width:670px) {
+    .event {
+        padding: 30px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
+    .event .card {
+        transition: 0.3s;
+        border-radius: 15px;
+        margin-right: 1px;
+        margin-left: 1px;
+    }
+
+    .event .card-img-top {
+        border-radius: 10px 10px 0 0;
+    }
+    
+  }
